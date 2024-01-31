@@ -1,4 +1,5 @@
-import azure.ai.vision as vision
+import os
+import azure.ai.vision as sdk
 from dotenv import load_dotenv
 
 load_dotenv()  # take environment variables from .env.
@@ -6,7 +7,7 @@ load_dotenv()  # take environment variables from .env.
 service_options = sdk.VisionServiceOptions(os.environ["VISION_ENDPOINT"],
                                            os.environ["VISION_KEY"])
 
-image_source = sdk.VisionSource(url="<url>")
+image_source = sdk.VisionSource(url=os.environ["IMAGE_URL"])
 
 options = sdk.ImageAnalysisOptions()
 
