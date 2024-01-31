@@ -1,3 +1,7 @@
+# Azure AI training workshop
+
+Working through some of the training stuff from <https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/>.
+
 Setup environment
 
 ```sh
